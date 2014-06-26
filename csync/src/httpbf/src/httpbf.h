@@ -23,7 +23,9 @@
 
 #include "config_csync.h"
 #ifdef NEON_WITH_LFS /* Switch on LFS in libneon. Never remove the NE_LFS! */
+#ifndef NE_LFS
 #define NE_LFS
+#endif
 #endif
 
 #include <neon/ne_session.h>
